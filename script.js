@@ -22,19 +22,19 @@ function handleSubmit(e) {
 
 function converter() {
   if (selectedCurrency.value === "eur") {
-    valueConverted = inputValue.value / 5.5;
+    valueConverted = inputValue.value / 6;
     result.innerHTML = valueFormatter("pt-BR", "EUR");
   } else if (selectedCurrency.value === "dol") {
-    valueConverted = inputValue.value / 5.1;
+    valueConverted = inputValue.value / 5.7;
     result.innerHTML = valueFormatter("en-US", "USD");
   } else if (selectedCurrency.value === "cad") {
     valueConverted = inputValue.value / 4.0; // Taxa de conversão fictícia para o exemplo
     result.innerHTML = valueFormatter("en-US", "CAD");
   } else if (selectedCurrency.value === "gbp") {
-    valueConverted = inputValue.value / 6.2; // Taxa de conversão fictícia para o exemplo
+    valueConverted = inputValue.value / 7.3; // Taxa de conversão fictícia para o exemplo
     result.innerHTML = valueFormatter("en-GB", "GBP");
   } else if (selectedCurrency.value === "chf") {
-    valueConverted = inputValue.value / 5.7; // Taxa de conversão fictícia para o exemplo
+    valueConverted = inputValue.value / 6.3; // Taxa de conversão fictícia para o exemplo
     result.innerHTML = valueFormatter("fr-CH", "CHF"); }
 
   animateResult();
